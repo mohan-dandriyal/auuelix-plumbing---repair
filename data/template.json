@@ -54,16 +54,21 @@
         },
         {
           "id": "ql4",
-          "label": "Gallery",
-          "url": "#gallery"
+          "label": "Why Choose Us",
+          "url": "#why-choose-us"
         },
         {
           "id": "ql5",
+          "label": "Testimonials",
+          "url": "#testimonials"
+        },
+        {
+          "id": "ql6",
           "label": "FAQs",
           "url": "#faq"
         },
         {
-          "id": "ql6",
+          "id": "ql7",
           "label": "Contact Us",
           "url": "#contact"
         }
