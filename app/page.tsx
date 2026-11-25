@@ -9,8 +9,9 @@ import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 import Faq from "@/components/sections/Faq";
 import { Header as headerContent, Testimonials as testimonialContent } from "@/types/template.type";
+import { Suspense } from "react";
 
-export default function Home() {
+function HomePageSections() {
   return (
     <>
       <Header content={headerContent} />
@@ -38,4 +39,14 @@ export default function Home() {
       <PageMotion />
     </>
   );
+}
+
+
+
+export default function HomePage() {
+  return (
+    <Suspense>
+      <HomePageSections />
+    </Suspense>
+  )
 }

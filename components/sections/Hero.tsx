@@ -114,20 +114,20 @@ export default function Hero() {
   const titleShown = mounted ? "translate-y-0" : "translate-y-[110%]";
 
   return (
-    <section id="home" className="font-[family-name:var(--font-inter),system-ui,sans-serif]">
-      <div className="relative isolate flex flex-col-reverse overflow-hidden bg-white lg:block lg:min-h-[clamp(34rem,39vw,46rem)]">
+    <section id="home" className="">
+      <div className="relative isolate flex flex-col-reverse overflow-hidden bg-white md:block md:min-h-[clamp(34rem,39vw,46rem)]">
         {/* ---------- Art: cyan stripe + diagonal image ---------- */}
         <div aria-hidden={false}>
           {/* stripe (desktop only) */}
           <div
             style={{ backgroundColor: CYAN, transitionDelay: mounted ? "100ms" : "0ms" }}
-            className={`pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] transition-transform duration-1000 ease-[cubic-bezier(.22,1,.36,1)] motion-reduce:transition-none lg:block [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)] ${mounted ? "translate-x-0" : "translate-x-full"
+            className={`pointer-events-none absolute inset-y-0 right-0 hidden w-[58%] transition-transform duration-1000 ease-[cubic-bezier(.22,1,.36,1)] motion-reduce:transition-none md:block [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)] ${mounted ? "translate-x-0" : "translate-x-full"
               }`}
           />
           {/* image, clip edge is parallel to the stripe */}
           <div
             style={{ borderColor: CYAN, transitionDelay: mounted ? "300ms" : "0ms" }}
-            className={`relative aspect-[4/3] overflow-hidden border-t-4 transition-all duration-1000 ease-out motion-reduce:transition-none sm:aspect-video lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[58%] lg:border-t-0 lg:[clip-path:polygon(17.5%_0,100%_0,100%_100%,3.5%_100%)] ${mounted ? "opacity-100 lg:translate-x-0" : "opacity-0 lg:translate-x-24"
+            className={`relative aspect-[4/3] overflow-hidden border-t-4 transition-all duration-1000 ease-out motion-reduce:transition-none sm:aspect-video md:absolute md:inset-y-0 md:right-0 md:aspect-auto w-[91%] right-[-4.5%] md:w-[58%] md:border-t-0 md:[clip-path:polygon(17.5%_0,100%_0,100%_100%,3.5%_100%)] ${mounted ? "opacity-100 md:translate-x-0" : "opacity-0 md:translate-x-24"
               }`}
           >
             <Image
@@ -143,8 +143,8 @@ export default function Hero() {
         </div>
 
         {/* ---------- Copy ---------- */}
-        <div className="shell relative z-10 py-10 lg:flex lg:min-h-[inherit] lg:w-full lg:flex-col lg:justify-center lg:py-0">
-          <div className="lg:max-w-[56%]">
+        <div className="shell relative z-10 py-10 md:flex md:min-h-[inherit] md:w-full md:flex-col md:justify-center lg:py-0">
+          <div className="md:max-w-[56%]">
             {/* eyebrow */}
             <p className="flex items-center gap-4 text-[clamp(.72rem,1.05vw,1rem)] font-bold uppercase tracking-[.22em] text-[#1b2437]">
               <Slashes className={`transition-all delay-100 duration-500 ease-out motion-reduce:transition-none ${mounted ? "translate-x-0 opacity-100" : "-translate-x-3 opacity-0"}`} />
@@ -159,13 +159,13 @@ export default function Hero() {
               <span
                 aria-hidden="true"
                 style={{ transitionDelay: mounted ? "550ms" : "0ms" }}
-                className={`hidden h-px w-[clamp(6rem,14vw,13rem)] origin-left bg-[#1b2437] transition-transform duration-[900ms] ease-out motion-reduce:transition-none sm:block ${mounted ? "scale-x-100" : "scale-x-0"
+                className={`hidden h-px w-[clamp(5rem,5vw,13rem)] origin-left bg-[#1b2437] transition-transform duration-[900ms] ease-out motion-reduce:transition-none sm:block ${mounted ? "scale-x-100" : "scale-x-0"
                   }`}
               />
             </p>
 
             {/* title: each line slides up from behind a mask */}
-            <h1 className="mt-5 text-[clamp(2.3rem,4.5vw,4.5rem)] font-bold leading-[1.2] tracking-[-0.035em] text-[#1b2437] lg:mt-[3.6vw]">
+            <h1 className="mt-5 text-[clamp(1.8rem,4.5vw,4.5rem)] font-bold leading-[1.2] tracking-[-0.035em] text-[#1b2437] lg:mt-[3.6vw]">
               <span className="-mb-[.15em] block overflow-hidden pb-[.15em]">
                 <span className={`${titleLine} ${titleShown}`} style={{ transitionDelay: mounted ? "250ms" : "0ms" }}>
                   {content.title1}
@@ -184,7 +184,7 @@ export default function Hero() {
                 const r = rise(650);
                 return { style: r.style };
               })()}
-              className={`mt-6 max-w-[32rem] text-[clamp(0.9rem,1.2vw,1.3rem)] leading-snug text-slate-700 lg:mt-[2.4vw] ${rise(650).className}`}
+              className={`mt-6 lg:max-w-[32rem] max-w-80 text-[clamp(1rem,1.2vw,1.3rem)] leading-snug text-slate-700 lg:mt-[2.4vw] ${rise(650).className}`}
             >
               {content.description}
             </p>
@@ -199,7 +199,7 @@ export default function Hero() {
       >
         <div className="lg:border-r lg:border-[#00bdd7]/65 lg:pr-8">
           <div {...rise(0, statsIn)}>
-            <h2 className="text-[clamp(1.8rem,2.5vw,2.5rem)] font-bold leading-[1.12]">
+            <h2 className="text-[clamp(1.3rem,2.5vw,2.5rem)] font-bold leading-[1.12]">
               {content.stats.title}
               <br />
               <Accent text={content.stats.subtitle} phrase={content.accent} />
@@ -222,7 +222,7 @@ export default function Hero() {
             return (
               <div key={label} className={`flex flex-col ${r.className}`} style={r.style}>
                 <dt className="order-last text-sm leading-snug text-slate-100 sm:text-[17px]">{label}</dt>
-                <dd className="mb-2 text-[clamp(2rem,3vw,3rem)] font-extrabold leading-none tabular-nums text-[#00c2e0]">
+                <dd className="mb-2 text-[clamp(1.6rem,3vw,3rem)] font-extrabold leading-none tabular-nums text-[#00c2e0]">
                   <span className="sr-only">{value}</span>
                   <Counter value={value} run={statsIn} />
                 </dd>
