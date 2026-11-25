@@ -127,7 +127,7 @@ export default function Hero() {
           {/* image, clip edge is parallel to the stripe */}
           <div
             style={{ borderColor: CYAN, transitionDelay: mounted ? "300ms" : "0ms" }}
-            className={`relative aspect-[4/3] overflow-hidden border-t-4 transition-all duration-1000 ease-out motion-reduce:transition-none lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[58%] lg:border-t-0 lg:[clip-path:polygon(17.5%_0,100%_0,100%_100%,3.5%_100%)] ${mounted ? "opacity-100 lg:translate-x-0" : "opacity-0 lg:translate-x-24"
+            className={`relative aspect-[4/3] overflow-hidden border-t-4 transition-all duration-1000 ease-out motion-reduce:transition-none sm:aspect-video lg:absolute lg:inset-y-0 lg:right-0 lg:aspect-auto lg:w-[58%] lg:border-t-0 lg:[clip-path:polygon(17.5%_0,100%_0,100%_100%,3.5%_100%)] ${mounted ? "opacity-100 lg:translate-x-0" : "opacity-0 lg:translate-x-24"
               }`}
           >
             <Image

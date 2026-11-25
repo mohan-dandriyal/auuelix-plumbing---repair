@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header content={headerContent} />
-      <main>
+      <main className="overflow-x-clip">
         <Hero />
 
         <div className="flex flex-col sm:gap-10 gap-8 sm:mt-10 nt-8">

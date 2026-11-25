@@ -138,7 +138,7 @@ export default function Services() {
               {/* info panel */}
               <motion.div
                 variants={panel}
-                className="relative mx-2 -mt-[14%] flex min-h-25 items-center gap-4 rounded-xl bg-white px-4 py-3 shadow-[0_8px_16px_#14252e30] transition-shadow duration-300 group-hover:shadow-[0_16px_28px_#14252e45] motion-reduce:transition-none"
+                className="relative mx-2 -mt-[14%] flex min-h-25 items-center gap-4 rounded-xl bg-white px-4 py-3 shadow-[0_8px_16px_#14252e30] transition-shadow duration-300 group-hover:shadow-[0_16px_28px_#14252e45] motion-reduce:transition-none md:max-xl:flex-col md:max-xl:items-start md:max-xl:gap-3"
               >
                 {/* wrapper animates; inner keeps your .service-drop shape untouched */}
                 <motion.span variants={iconPop} className="-mt-7 shrink-0">
