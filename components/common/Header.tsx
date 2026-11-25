@@ -77,7 +77,7 @@ export default function Header({ content }: { content: HeaderType }) {
     style: { transitionDelay: mounted ? `${250 + i * 70}ms` : "0ms" },
   });
 
-  const textSize = "text-[clamp(0.8rem,1vw,1rem)] font-[500] tracking-wider";
+  const textSize = "text-[clamp(1.05rem,1vw,1rem)] font-[500] tracking-wider";
 
   return (
     <header

@@ -195,7 +195,7 @@ export default function Hero() {
       {/* ---------- Stats panel ---------- */}
       <div
         ref={statsRef}
-        className="relative shell mx-auto grid gap-6 bg-[#112d3c]/[.98] p-6 text-white sm:p-10 lg:-mt-16 lg:grid-cols-[.98fr_1.02fr] lg:items-center xl:p-12"
+        className="relative shell mx-auto grid gap-6 bg-[#112d3c]/[.98] p-6 text-white sm:p-10 -mt-16 lg:grid-cols-[.98fr_1.02fr] lg:items-center xl:p-12"
       >
         <div className="lg:border-r lg:border-[#00bdd7]/65 lg:pr-8">
           <div {...rise(0, statsIn)}>
