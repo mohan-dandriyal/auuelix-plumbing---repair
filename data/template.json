@@ -1,0 +1,454 @@
+{
+  "common": {
+    "globalUI": {
+      "loadingText": "Loading AQUELIX...",
+      "notFoundText": "Page Not Found"
+    },
+    "Footer": {
+      "logoImage": "/main logo/logo-w.png",
+      "logoAlt": "AQUELIX Plumbing & Repair Services",
+      "brandTitle": "AQUELIX",
+      "copyrightText": "© 2026 Aquelix. All Rights Reserved. Powered by Lestow.",
+      "description": "Reliable Plumbing Services with a Quality Guarantee",
+      "socialLinks": [
+        {
+          "id": "fs1",
+          "icon": "FaFacebookF",
+          "url": "https://www.facebook.com",
+          "label": "Facebook"
+        },
+        {
+          "id": "fs2",
+          "icon": "FaXTwitter",
+          "url": "https://x.com",
+          "label": "X"
+        },
+        {
+          "id": "fs3",
+          "icon": "FaInstagram",
+          "url": "https://www.instagram.com",
+          "label": "Instagram"
+        },
+        {
+          "id": "fs4",
+          "icon": "FaYoutube",
+          "url": "https://www.youtube.com",
+          "label": "YouTube"
+        }
+      ],
+      "quickLinks": [
+        {
+          "id": "ql1",
+          "label": "Home",
+          "url": "#home"
+        },
+        {
+          "id": "ql2",
+          "label": "About Us",
+          "url": "#about"
+        },
+        {
+          "id": "ql3",
+          "label": "Services",
+          "url": "#services"
+        },
+        {
+          "id": "ql4",
+          "label": "Gallery",
+          "url": "#gallery"
+        },
+        {
+          "id": "ql5",
+          "label": "FAQs",
+          "url": "#faq"
+        },
+        {
+          "id": "ql6",
+          "label": "Contact Us",
+          "url": "#contact"
+        }
+      ],
+      "contactInfo": {
+        "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210",
+        "phone": "+1 (000) 000-0000",
+        "email": "info@xyz.com"
+      },
+      "tagline": "PLUMBING & REPAIR SERVICES",
+      "accent": "Quality Guarantee",
+      "quickLinksTitle": "Quick Links",
+      "addressTitle": "Our Address",
+      "socialTitle": "Follow Us"
+    }
+  },
+  "categories": {
+    "Aquelix": {
+      "sections": {
+        "Header": {
+          "variants": {
+            "AquelixHeader2": {
+              "logo": {
+                "src": "/main logo/logo.png",
+                "logoAlt": "AQUELIX Logo"
+              },
+              "navLinks": [
+                {
+                  "id": "nl-home",
+                  "label": "Home",
+                  "url": "#home"
+                },
+                {
+                  "id": "nl-about",
+                  "label": "About Us",
+                  "url": "#about"
+                },
+                {
+                  "id": "nl-services",
+                  "label": "Services",
+                  "url": "#services"
+                },
+                {
+                  "id": "nl-why-choose-us",
+                  "label": "Why Choose Us",
+                  "url": "#why-choose-us"
+                },
+                {
+                  "id": "nl-testimonials",
+                  "label": "Testimonials",
+                  "url": "#testimonials"
+                },
+                {
+                  "id": "nl-faq",
+                  "label": "FAQs",
+                  "url": "#faq"
+                }
+              ],
+              "contactButton": {
+                "text": "Contact Us",
+                "url": "#contact"
+              },
+              "brand": "AQUELIX",
+              "tagline": "PLUMBING & REPAIR SERVICES",
+              "menuLabel": "Toggle navigation"
+            }
+          }
+        },
+        "Hero": {
+          "variants": {
+            "AquelixHero2": {
+              "subtitle": "PLUMBING & REPAIR SERVICES",
+              "title1": "Expert Plumbing",
+              "title2": "& Repair Solutions",
+              "description": "Fast, reliable and professional plumbing services for your home and business.",
+              "image1": "/other/hero_banner.webp",
+              "accent": "& Repair",
+              "stats": {
+                "title": "Complete Plumbing",
+                "subtitle": "& Repair Services",
+                "description": "Your trusted partner for residential and commercial plumbing, maintenance, and repair solutions.",
+                "items": [
+                  {
+                    "value": "10+",
+                    "label": "Years of Experience"
+                  },
+                  {
+                    "value": "5,000+",
+                    "label": "Service Requests Completed"
+                  },
+                  {
+                    "value": "25,000+",
+                    "label": "Satisfied Customers"
+                  },
+                  {
+                    "value": "24/7",
+                    "label": "Emergency Support"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "AboutUs": {
+          "variants": {
+            "AquelixAboutUs2": {
+              "subtitle": "ABOUT US",
+              "title1": "Trusted Plumbing &",
+              "title2": "Repair Experts",
+              "description1": "At AQUELIX, we provide reliable, high-quality plumbing and repair services for homes and businesses. With skilled professionals and a commitment to excellent service, we ensure quick, effective and long-lasting solutions for all your plumbing needs.",
+              "stats": [
+                {
+                  "id": "s1",
+                  "number": "10",
+                  "suffix": "+",
+                  "text": "Years of Experience",
+                  "icon": "FaRegCalendarAlt"
+                },
+                {
+                  "id": "s2",
+                  "number": "5,000",
+                  "suffix": "+",
+                  "text": "Service Requests Completed",
+                  "icon": "FaRegCheckCircle"
+                },
+                {
+                  "id": "s3",
+                  "number": "25,000",
+                  "suffix": "+",
+                  "text": "Satisfied Customers",
+                  "icon": "FaUsers"
+                },
+                {
+                  "id": "s4",
+                  "number": "24/7",
+                  "suffix": "",
+                  "text": "Emergency Support",
+                  "icon": "FaHeadset"
+                }
+              ],
+              "imageMain": "/other/about_big.webp",
+              "imageSmall": "/other/about_small.webp",
+              "features": [
+                {
+                  "id": "f1",
+                  "title": "Skilled Team",
+                  "description": "Experienced & certified plumbing professionals."
+                },
+                {
+                  "id": "f2",
+                  "title": "Reliable Service",
+                  "description": "On-time, efficient and long-lasting solutions."
+                },
+                {
+                  "id": "f3",
+                  "title": "Customer Focused",
+                  "description": "Quality work with complete satisfaction."
+                }
+              ],
+              "statsTitle": "Complete Plumbing & Repair Services",
+              "statsDescription": "Your trusted partner for residential and commercial plumbing, maintenance, and repair solutions.",
+              "accent": "Repair"
+            }
+          }
+        },
+        "Services": {
+          "variants": {
+            "AquelixServices2": {
+              "subtitle": "OUR SERVICES",
+              "title1": "Our Professional",
+              "title2": "Plumbing Services",
+              "description": "Comprehensive plumbing and repair solutions for homes, businesses, and commercial spaces.",
+              "services": [
+                {
+                  "id": "s1",
+                  "title": "Plumbing Installation",
+                  "description": "Professional setup for new fixtures and systems.",
+                  "image": "/other/service_installation.webp",
+                  "icon": "FaFaucet"
+                },
+                {
+                  "id": "s2",
+                  "title": "Plumbing Repairs",
+                  "description": "Quick and reliable fixes for leaks, clogs, and pipe issues.",
+                  "image": "/other/service_repairs.webp",
+                  "icon": "FaTools"
+                },
+                {
+                  "id": "s3",
+                  "title": "Drain Cleaning",
+                  "description": "Effective removal of stubborn blockages and build-up.",
+                  "image": "/other/service_drain.webp",
+                  "icon": "FaWater"
+                }
+              ],
+              "accent": "Plumbing"
+            }
+          }
+        },
+        "WhatWeDo": {
+          "variants": {
+            "AquelixWhatWeDo2": {
+              "subtitle": "WHY CHOOSE US",
+              "title1": "Expect the Best with",
+              "title2": "Our Plumbing Service",
+              "description": "We are committed to delivering reliable, high-quality plumbing and repair solutions for homes and businesses. With a skilled team, quick response, and a customer-first approach, we ensure a hassle-free and long-lasting service experience.",
+              "features": [
+                {
+                  "id": "p1",
+                  "title": "Skilled Professionals",
+                  "description": "Trained and experienced plumbing experts."
+                },
+                {
+                  "id": "p2",
+                  "title": "Quick Response",
+                  "description": "Fast and efficient service when you need it most."
+                },
+                {
+                  "id": "p3",
+                  "title": "Quality Workmanship",
+                  "description": "Reliable, long-lasting and cost-effective solutions."
+                },
+                {
+                  "id": "p4",
+                  "title": "Customer Satisfaction",
+                  "description": "A trusted service with a proven track record."
+                }
+              ],
+              "highlights": [
+                "Transparent & Fair Pricing",
+                "Reliable & On-Time Service"
+              ],
+              "accent": "Plumbing"
+            }
+          }
+        },
+        "Testimonials": {
+          "variants": {
+            "AquelixTestimonials2": {
+              "subtitle": "TESTIMONIALS",
+              "title1": "What Our Clients",
+              "title2": "Say",
+              "description": "Real feedback from our valued customers.",
+              "testimonials": [
+                {
+                  "id": "t1",
+                  "name": "Michael Turner",
+                  "location": "Homeowner",
+                  "quote": "Excellent and professional service! The team quickly fixed our plumbing issue and explained everything clearly. Highly reliable and courteous.",
+                  "rating": 5,
+                  "avatar": "/other/t1.webp"
+                },
+                {
+                  "id": "t2",
+                  "name": "Sarah Mitchell",
+                  "location": "Business Owner",
+                  "quote": "Great experience from start to finish. They arrived on time, were very professional, and delivered high-quality work at a fair price.",
+                  "rating": 5,
+                  "avatar": "/other/t2.webp"
+                },
+                {
+                  "id": "t3",
+                  "name": "Sarah Mitchell",
+                  "location": "Business Owner",
+                  "quote": "Great experience from start to finish. They arrived on time, were very professional, and delivered high-quality work at a fair price.",
+                  "rating": 5,
+                  "avatar": "/other/t2.webp"
+                },
+                {
+                  "id": "t4",
+                  "name": "Sarah Mitchell",
+                  "location": "Business Owner",
+                  "quote": "Great experience from start to finish. They arrived on time, were very professional, and delivered high-quality work at a fair price.",
+                  "rating": 5,
+                  "avatar": "/other/t2.webp"
+                }
+              ],
+              "accent": "Clients",
+              "slideLabels": [
+                "Show Michael?s testimonial",
+                "Show both testimonials",
+                "Show Sarah?s testimonial"
+              ]
+            }
+          }
+        },
+        "Faq": {
+          "variants": {
+            "AquelixFaq2": {
+              "subtitle": "FAQS",
+              "title1": "Frequently Asked",
+              "title2": "Questions",
+              "description": "Find quick answers to some of the most common questions about our plumbing services, pricing, and service process.",
+              "faqs": [
+                {
+                  "id": "faq1",
+                  "question": "Do you offer emergency plumbing services?",
+                  "answer": "Yes, we provide 24/7 emergency plumbing services for urgent issues like leaks, burst pipes, or major blockages."
+                },
+                {
+                  "id": "faq2",
+                  "question": "How quickly can you reach my location?",
+                  "answer": "Response times depend on your location and team availability."
+                },
+                {
+                  "id": "faq3",
+                  "question": "Do you provide service for both homes and businesses?",
+                  "answer": "Yes, we provide plumbing services for homes and businesses."
+                },
+                {
+                  "id": "faq4",
+                  "question": "Is your plumbing work guaranteed?",
+                  "answer": "Please contact our team for details about our service guarantee."
+                }
+              ]
+            }
+          }
+        },
+        "Contact": {
+          "variants": {
+            "AquelixContact2": {
+              "subtitle": "CONTACT US",
+              "title1": "Get in Touch with Our",
+              "title2": "Plumbing Experts",
+              "description": "Have a plumbing issue or need a service? Reach out to our team today. We’re here to help with quick, reliable solutions.",
+              "contactInfo": {
+                "phoneTitle": "Call Us",
+                "phone": "+1 (000) 000-0000",
+                "emailTitle": "Email Us",
+                "email": "info@xyz.com",
+                "addressTitle": "Our Location",
+                "address": "3170 Rosewood Lane Unit 200, Beverly Hills, CA 90210"
+              },
+              "form": {
+                "title": "Send Us a Message",
+                "name": "Your Name",
+                "phone": "Phone Number",
+                "email": "Email Address",
+                "service": "Service Required",
+                "message": "Your Message"
+              }
+            }
+          }
+        }
+      },
+      "templateComponents": {
+        "shared": {
+          "Header": "AquelixHeader2",
+          "Footer": "AquelixFooter2"
+        },
+        "pages": {
+          "home": {
+            "components": [
+              {
+                "key": "HeroSection",
+                "component": "AquelixHero2"
+              },
+              {
+                "key": "AboutUs",
+                "component": "AquelixAboutUs2"
+              },
+              {
+                "key": "Services",
+                "component": "AquelixServices2"
+              },
+              {
+                "key": "WhatWeDo",
+                "component": "AquelixWhatWeDo2"
+              },
+              {
+                "key": "Testimonials",
+                "component": "AquelixTestimonials2"
+              },
+              {
+                "key": "Contact",
+                "component": "AquelixContact2"
+              },
+              {
+                "key": "Faq",
+                "component": "AquelixFaq2"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
