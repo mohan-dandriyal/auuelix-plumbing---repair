@@ -49,6 +49,7 @@ export default function Testimonials({ content }: { content: TestimonialsType })
   const swiperRef = useRef<SwiperInstance | null>(null);
 
   const reviews = content.testimonials;
+  const loop = reviews.length >= 3;
   const [active, setActive] = useState(0);
 
   return (
@@ -77,20 +78,21 @@ export default function Testimonials({ content }: { content: TestimonialsType })
               onSwiper={(instance) => {
                 swiperRef.current = instance;
               }}
-              onSlideChange={(instance) => setActive(instance.activeIndex)}
+              onRealIndexChange={(instance) => setActive(instance.realIndex)}
               speed={reducedMotion ? 0 : 480}
               grabCursor={reviews.length > 1}
               spaceBetween={20}
               slidesPerView={1}
               breakpoints={{ 768: { slidesPerView: 2 } }}
               watchSlidesProgress
-              rewind
+              loop={loop}
+              rewind={!loop}
               autoHeight
             >
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
                   {({ isActive, isVisible }) => (
-                    <div aria-hidden={!isActive && !isVisible}>
+                    <div className="py-1 px-2" aria-hidden={!isActive && !isVisible}>
                       <ReviewCard review={review} active={isActive || isVisible} />
                     </div>
                   )}
@@ -98,7 +100,7 @@ export default function Testimonials({ content }: { content: TestimonialsType })
               ))}
             </Swiper>
           ) : (
-            <div id="testimonial-carousel" className={reviews.length > 1 ? "grid gap-5 md:grid-cols-2" : undefined}>
+            <div id="testimonial-carousel" className={reviews.length > 1 ? "grid gap-5 py-3 md:grid-cols-2" : "py-3"}>
               {reviews.slice(0, 2).map((review, index) => (
                 <div key={review.id} className={index === 1 ? "hidden md:block" : undefined}>
                   <ReviewCard review={review} active />
@@ -133,7 +135,14 @@ export default function Testimonials({ content }: { content: TestimonialsType })
                   aria-controls="testimonial-carousel"
                   aria-current={isActive ? "true" : undefined}
                   disabled={!isClient}
-                  onClick={() => swiperRef.current?.slideTo(index)}
+                  onClick={() => {
+                    const swiper = swiperRef.current;
+                    if (loop) {
+                      swiper?.slideToLoop(index);
+                    } else {
+                      swiper?.slideTo(index);
+                    }
+                  }}
                   whileTap={{ scale: 0.85 }}
                   className="grid h-9 min-w-9 cursor-pointer place-items-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                 >
@@ -167,7 +176,7 @@ function ReviewCard({ review, active }: { review: Review; active: boolean }) {
       initial={false}
       animate={active ? "active" : "rest"}
       whileHover={active ? { y: -4, transition: { type: "spring", stiffness: 300, damping: 20 } } : undefined}
-      className="review-card group relative isolate flex flex-col justify-between overflow-hidden rounded-[1.2rem] border border-slate-200 p-6 transition-shadow duration-300 hover:shadow-[0_18px_34px_-16px_#14252e40] motion-reduce:transition-none xl:px-11 xl:py-7"
+      className="review-card group relative isolate flex flex-col justify-between overflow-hidden rounded-[1.2rem] border border-slate-200 p-6 transition-shadow duration-300 hover:shadow-[0_18px_30px_-16px_#14252e40] motion-reduce:transition-none xl:px-11 xl:py-7"
     >
       <blockquote>
         <span

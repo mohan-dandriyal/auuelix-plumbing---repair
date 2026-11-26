@@ -126,7 +126,7 @@ export default function About() {
               alt="Smiling plumber giving a thumbs-up beside a sink"
               fill
               sizes="(min-width: 1024px) 43vw, 95vw"
-              className="object-cover"
+              className="framed-photo"
             />
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function About() {
                 alt="Running chrome faucet"
                 fill
                 sizes="(min-width: 1024px) 16vw, 35vw"
-                className="object-cover"
+                className="framed-photo"
               />
             </motion.div>
           </motion.div>

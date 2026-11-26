@@ -135,8 +135,8 @@ export default function Hero() {
               alt="Plumber tightening a chrome pipe under a sink"
               fill
               preload
-              sizes="(min-width: 1024px) 58vw, 100vw"
-              className={`object-cover object-center transition-transform duration-[1800ms] ease-out motion-reduce:transition-none ${mounted ? "scale-100" : "scale-110"
+              sizes="(min-width: 768px) 58vw, 91vw"
+              className={`framed-photo object-center transition-transform duration-[1800ms] ease-out motion-reduce:transition-none ${mounted ? "scale-100" : "scale-110"
                 }`}
             />
           </div>

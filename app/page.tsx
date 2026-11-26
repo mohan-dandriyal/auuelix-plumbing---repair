@@ -28,9 +28,9 @@ function HomePageSections() {
 
           <Testimonials content={testimonialContent} />
 
-          <Contact />
-
           <Faq />
+
+          <Contact />
         </div>
       </main>
 

@@ -49,6 +49,11 @@ summary::-webkit-details-marker { display: none; }
 }
 .review-copy { font-size: clamp(1rem, 1.47vw, 1.38rem); line-height: 1.55; }
 .testimonial-swiper .swiper-slide { height: auto; }
+.framed-photo {
+  object-fit: cover;
+  /* Keep the dark outer pixels of the source photos outside their frames. */
+  transform: scale(1.02);
+}
 .eyebrow {
   display: flex;
   align-items: center;

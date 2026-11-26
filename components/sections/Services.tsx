@@ -130,7 +130,7 @@ export default function Services() {
                     alt={title}
                     fill
                     sizes="(min-width: 768px) 31vw, 90vw"
-                    className="object-cover motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105"
+                    className="framed-photo motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:scale-105"
                   />
                 </div>
               </div>
