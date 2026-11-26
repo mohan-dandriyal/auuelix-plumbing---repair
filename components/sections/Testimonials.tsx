@@ -92,7 +92,7 @@ export default function Testimonials({ content }: { content: TestimonialsType })
               {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
                   {({ isActive, isVisible }) => (
-                    <div className="py-1 px-2" aria-hidden={!isActive && !isVisible}>
+                    <div className=" px-2" aria-hidden={!isActive && !isVisible}>
                       <ReviewCard review={review} active={isActive || isVisible} />
                     </div>
                   )}
@@ -176,7 +176,7 @@ function ReviewCard({ review, active }: { review: Review; active: boolean }) {
       initial={false}
       animate={active ? "active" : "rest"}
       whileHover={active ? { y: -4, transition: { type: "spring", stiffness: 300, damping: 20 } } : undefined}
-      className="review-card group relative isolate flex flex-col justify-between overflow-hidden rounded-[1.2rem] border border-slate-200 p-6 transition-shadow duration-300 hover:shadow-[0_18px_30px_-16px_#14252e40] motion-reduce:transition-none xl:px-11 xl:py-7"
+      className="review-card group relative isolate flex flex-col justify-between overflow-hidden rounded-[1.2rem] border border-slate-200 p-6 transition-shadow duration-300 hover:shadow-md shadow-gray-100 motion-reduce:transition-none "
     >
       <blockquote>
         <span
