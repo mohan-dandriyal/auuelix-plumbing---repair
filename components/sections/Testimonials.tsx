@@ -72,6 +72,7 @@ export default function Testimonials({ content }: { content: TestimonialsType })
             <Swiper
               id="testimonial-carousel"
               className="testimonial-swiper"
+              style={{padding : '8px 0px'}}
               modules={[A11y, Keyboard]}
               a11y={{ containerMessage: content.subtitle }}
               keyboard={{ enabled: true, onlyInViewport: true }}
@@ -100,7 +101,7 @@ export default function Testimonials({ content }: { content: TestimonialsType })
               ))}
             </Swiper>
           ) : (
-            <div id="testimonial-carousel" className={reviews.length > 1 ? "grid gap-5 py-3 md:grid-cols-2" : "py-3"}>
+            <div id="testimonial-carousel" className={reviews.length > 1 ? "grid gap-5 bg-red-500 py-3 md:grid-cols-2" : "py-3"}>
               {reviews.slice(0, 2).map((review, index) => (
                 <div key={review.id} className={index === 1 ? "hidden md:block" : undefined}>
                   <ReviewCard review={review} active />
@@ -189,7 +190,7 @@ function ReviewCard({ review, active }: { review: Review; active: boolean }) {
       </blockquote>
 
       <figcaption className="mt-6 flex flex-wrap items-center gap-3 xl:gap-5">
-        <Image src={avatar} alt="" width={80} height={80} className="size-14 rounded-full object-cover xl:size-18" />
+        <Image src={avatar} alt="" width={80} height={80} className="size-14 rounded-full object-cover xl:size-15" />
         <div className="border-l-2 border-accent pl-3 xl:pl-5">
           <div className="font-bold text-base lg:text-lg">{name}</div>
           <div className="text-sm text-copy text-sm sm:text-base">{location}</div>
